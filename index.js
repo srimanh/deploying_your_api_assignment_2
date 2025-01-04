@@ -4,10 +4,10 @@ require('dotenv').config();
 const app = express();
 
 app.get('/', (req, res) => {
-  if (process.env.IS_ADMIN === 'true') {
-    res.send({ message: "Welcome, Admin!", data: ["Admin Data 1", "Admin Data 2"] });
+  if (process.env.IS_KALVIUM === 'true') {
+    res.send({ message: "Welcome, kalvian", data: ["Squad 76 ", "Coimbatore"] });
   } else {
-    res.send({ message: "Welcome, User!", data: ["User Data 1", "User Data 2"] });
+    res.send({ message: "Welcome, New User!", data: ["Hey This is kalvium", "Thanks for visiting our website"] });
   }
 });
 
